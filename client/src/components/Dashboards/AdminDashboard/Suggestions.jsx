@@ -80,8 +80,8 @@ function Suggestions() {
   }, []);
 
   return (
-    <div className="w-full h-screen flex flex-col gap-3 items-center justify-center">
-      <h1 className="text-white font-bold text-5xl">Suggestions</h1>
+    <div className="w-full h-screen flex flex-col gap-3 items-center justify-center" style={{ backgroundImage: 'url(https://i0.wp.com/backgroundabstract.com/wp-content/uploads/edd/2022/06/soft_blue_mosaic_pattern_background-e1655909204819.jpg?resize=1000%2C750&ssl=1)' }}>
+      <h1 className="text-black font-bold text-5xl">Suggestions</h1>
       <div className="bg-neutral-950 px-10 py-5 rounded-xl shadow-xl sm:w-[50%] sm:min-w-[450px] w-full mt-5 max-h-96 overflow-auto">
         <span className="text-white font-bold text-xl">All Students</span>
         <ul role="list" className="divide-y divide-gray-700 text-white">

@@ -173,10 +173,10 @@ function Invoices() {
   }, [allInvoices.length, pendingInvoices.length]);
 
   return (
-    <div className="w-full h-screen flex flex-col gap-3 items-center justify-center">
+    <div className="w-full h-screen flex flex-col gap-3 items-center justify-center" style={{ backgroundImage: 'url(https://i0.wp.com/backgroundabstract.com/wp-content/uploads/edd/2022/06/soft_blue_mosaic_pattern_background-e1655909204819.jpg?resize=1000%2C750&ssl=1)' }}>
       <LoadingBar color='#0000FF' progress={Progress} onLoaderFinished={() => setProgress(0)} />
-      <h1 className="text-white font-bold text-5xl">Invoices</h1>
-      <button onClick={genInvoices} className="py-3 px-7 rounded-lg font-bold text-white bg-blue-600 hover:bg-blue-800 transition-all">
+      <h1 className="text-black font-bold text-5xl">Invoices</h1>
+      <button onClick={genInvoices} className="py-3 px-7 rounded-lg font-bold text-white bg-green-700 hover:bg-green-800 transition-all">
         Generate Invoices
       </button>
       <div className="bg-neutral-950 px-10 py-5 rounded-xl shadow-xl sm:w-[50%] sm:min-w-[500px] w-full mt-5 max-h-96 overflow-auto">

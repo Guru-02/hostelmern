@@ -58,8 +58,8 @@ function Suggestions() {
   };
 
   return (
-    <div className="w-full h-screen flex flex-col gap-10 items-center justify-center max-h-screen overflow-y-auto">
-      <h1 className="text-white font-bold text-5xl mt-5">Suggestions</h1>
+    <div className="w-full h-screen flex flex-col gap-10 items-center justify-center max-h-screen overflow-y-auto" style={{ backgroundImage: 'url(https://i0.wp.com/backgroundabstract.com/wp-content/uploads/edd/2022/06/soft_blue_mosaic_pattern_background-e1655909204819.jpg?resize=1000%2C750&ssl=1)' }}>
+      <h1 className="text-black font-bold text-5xl mt-5">Suggestions</h1>
       <form
         method="POST"
         onSubmit={registerSuggestions}
@@ -82,7 +82,7 @@ function Suggestions() {
           ></textarea>
           <button
             type="submit"
-            className="w-full text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-800 text-lg rounded-lg px-5 py-2.5 mt-5 text-center"
+            className="w-full text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-900 text-lg rounded-lg px-5 py-2.5 mt-5 text-center"
           >
             Make Suggestion
           </button>

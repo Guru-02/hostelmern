@@ -52,7 +52,7 @@ const List = () => {
   }, [invoiceList.length]);
 
   return (
-    <div className="w-full max-w-md p-4 rounded-lg shadow sm:p-8 bg-neutral-950 drop-shadow-xl overflow-y-auto max-h-70">
+    <div className="w-full max-w-md p-4 rounded-lg shadow sm:p-8 bg-neutral-950 drop-shadow-xl overflow-y-auto max-h-70" >
       <div className="flex items-center justify-between mb-4">
         <h5 className="text-xl font-bold leading-none text-white">
           Unpaid Invoices
@@ -153,9 +153,9 @@ function Home() {
   const [daysOff, setDaysOff] = useState(0); //!Fetch from database
 
   return (
-    <div className="w-full h-screen flex items-center justify-center flex-col gap-5 max-h-screen overflow-y-auto pt-64 lg:pt-0 md:pt-64 sm:pt-96">
-      <h1 className="text-white font-bold text-5xl text-center">
-        Welcome <span className="text-blue-500">{student.name}!</span>
+    <div className="w-full h-screen flex items-center justify-center flex-col gap-5 max-h-screen overflow-y-auto pt-64 lg:pt-0 md:pt-64 sm:pt-96" style={{ backgroundImage: 'url(https://i0.wp.com/backgroundabstract.com/wp-content/uploads/edd/2022/06/soft_blue_mosaic_pattern_background-e1655909204819.jpg?resize=1000%2C750&ssl=1)' }}>
+      <h1 className="text-black font-bold text-5xl text-center">
+        Welcome <span className="text-black-500">{student.name}!</span>
       </h1>
       <div className="flex gap-5 w-full justify-center flex-wrap">
         <List />

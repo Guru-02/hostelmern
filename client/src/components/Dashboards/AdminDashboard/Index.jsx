@@ -185,7 +185,10 @@ export default function Index() {
     <div className="flex">
       <Sidebar links={links} />
       <Topbar name={admin.name} notifications={notifications} />
-      <div className="w-full bg-stone-900 h-screen">
+      <div
+  className="w-full bg-gray-400 h-screen bg-cover bg-center bg-no-repeat"
+  // style={{ backgroundImage: 'url(https://wallpapers.com/images/hd/grey-texture-background-d29qkeb2b46ygint.jpg)' }}
+>
         <Outlet />
       </div>
     </div>

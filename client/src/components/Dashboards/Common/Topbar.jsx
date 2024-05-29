@@ -30,7 +30,7 @@ function Topbar({ name, notifications }) {
   }, []);
 
   return (
-    <div className="py-5 px-5 flex items-center justify-between text-white w-full bg-stone-950 shadow-lg absolute top-0 md:w-[83.3vw] md:ml-[16.7vw]">
+    <div className="py-5 px-5 flex items-center justify-between text-white w-full bg-gray-700 shadow-lg absolute top-0 md:w-[83.3vw] md:ml-[16.7vw]">
       {date.toLocaleTimeString()}
       <span>{name}</span>
       <div className="flex gap-3">
@@ -41,7 +41,7 @@ function Topbar({ name, notifications }) {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-6 h-6 hover:text-blue-500"
+            className="w-6 h-6 hover:text-green-400"
           >
             <path
               strokeLinecap="round"
@@ -62,7 +62,7 @@ function Topbar({ name, notifications }) {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-6 h-6 hover:text-blue-500"
+            className="w-6 h-6 hover:text-green-400"
           >
             <path
               strokeLinecap="round"
@@ -70,12 +70,12 @@ function Topbar({ name, notifications }) {
               d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
             />
           </svg>
-          <div className="absolute bg-neutral-800 -bottom-15 right-2 p-5 w-96 hidden group-hover:flex flex-col rounded-xl">
+          <div className="absolute bg-blue-950 -bottom-15 right-2 p-5 w-96 hidden group-hover:flex flex-col rounded-xl">
             <ul className="[&>*:nth-child(1)]:border-t-0">
               {notifications.map((noti) => (
                 <li
                   key={noti}
-                  className="py-5 px-5 flex justify-between items-center text-md border-t-[1px] border-neutral-500 transition-all hover:bg-neutral-900 hover:rounded-xl hover:scale-105 hover:shadow-xl hover:border-transparent"
+                  className="py-5 px-5 flex justify-between items-center text-md border-t-[1px] border-neutral-500 transition-all hover:bg-blue-900 hover:rounded-xl hover:scale-105 hover:shadow-xl hover:border-transparent"
                 >
                   New account request from {noti}
                   <span className="group/edit relative flex">
@@ -110,7 +110,7 @@ function Topbar({ name, notifications }) {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-6 h-6 hover:text-blue-500"
+            className="w-6 h-6 hover:text-green-400"
           >
             <path
               strokeLinecap="round"
@@ -118,11 +118,11 @@ function Topbar({ name, notifications }) {
               d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
             />
           </svg>
-          <div className="absolute bg-neutral-800 -bottom-20 right-2 hidden group-hover:flex flex-col rounded">
-            <Link to="settings" className="py-2 px-8 hover:bg-neutral-900">
+          <div className="absolute bg-blue-950 -bottom-20 right-2 hidden group-hover:flex flex-col rounded">
+            <Link to="settings" className="py-2 px-8 hover:bg-blue-900">
               Settings
             </Link>
-            <Link to="/" className="py-2 px-8 hover:bg-neutral-900">
+            <Link to="/" className="py-2 px-8 hover:bg-blue-900">
               <span onClick={logout}>Logout</span>
             </Link>
           </div>

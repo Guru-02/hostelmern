@@ -107,7 +107,7 @@ function Attendance() {
 
   const labels = ["Present", "Absentees", "Unmarked Students"];
   const graph = (
-    <div className="flex flex-row-reverse items-center gap-3 h-64">
+    <div className="flex flex-row-reverse items-center gap-5 h-64">
       <Doughnut
         datasetIdKey="id"
         data={{
@@ -137,7 +137,7 @@ function Attendance() {
           },
         }}
       />
-      <ul className="text-white">
+      <ul className="text-black">
         <li className="flex gap-2">
           {" "}
           <span className="w-10 h-5 bg-orange-500 block"></span> Absent
@@ -152,10 +152,10 @@ function Attendance() {
 
 
   return (
-    <div className="w-full h-screen flex flex-col gap-3 items-center xl:pt-0 md:pt-40 pt-64 justify-center overflow-auto max-h-screen">
+    <div className="w-full h-screen flex flex-col gap-3 items-center xl:pt-0 md:pt-40 pt-64 justify-center overflow-auto max-h-screen" style={{ backgroundImage: 'url(https://i0.wp.com/backgroundabstract.com/wp-content/uploads/edd/2022/06/soft_blue_mosaic_pattern_background-e1655909204819.jpg?resize=1000%2C750&ssl=1)' }}>
       <LoadingBar color="#0000FF" progress={progress} onLoaderFinished={() => setProgress(0)} />
-      <h1 className="text-white font-bold text-5xl">Attendance</h1>
-      <p className="text-white text-xl mb-10">Date: {date}</p>
+      <h1 className="text-black font-bold text-5xl">Attendance</h1>
+      <p className="text-black text-xl mb-10">Date: {date}</p>
       <div className="flex gap-5 flex-wrap items-center justify-center">
         <>{graph}</>
         <div className="flow-root md:w-[400px] w-full bg-neutral-950 px-7 py-5 rounded-lg shadow-xl max-h-[250px] overflow-auto">
@@ -172,7 +172,7 @@ function Attendance() {
               : unmarkedStudents.map((student) =>
                   student.attendance === undefined ? (
                     <li
-                      className="py-3 sm:py-4 px-5 rounded hover:bg-neutral-700 hover:scale-105 transition-all"
+                      className="py-3 sm:py-4 px-5 rounded hover:bg-neutral-800 hover:scale-105 transition-all"
                       key={student.id}
                     >
                       <div className="flex items-center space-x-4">

@@ -122,7 +122,7 @@ function Complaints() {
   }, [allComplaints.length, unsolvedComplaints.length, resolvedComplaints.length]);
 
   const graph = (
-    <div className="flex items-center justify-center md:h-64 h-40 md:w-96 w-full">
+    <div className="flex items-center justify-center md:h-64 h-40 md:w-96 w-full text-black">
       <Line
         data={{
           labels: [
@@ -176,8 +176,8 @@ function Complaints() {
   );
 
   return (
-    <div className="w-full h-screen flex flex-col gap-10 md:gap-7 pt-32 items-center justify-center overflow-auto">
-      <h1 className="text-white font-bold text-5xl">Complaints</h1>
+    <div className="w-full h-screen flex flex-col gap-10 md:gap-7 pt-32 items-center justify-center overflow-auto" style={{ backgroundImage: 'url(https://i0.wp.com/backgroundabstract.com/wp-content/uploads/edd/2022/06/soft_blue_mosaic_pattern_background-e1655909204819.jpg?resize=1000%2C750&ssl=1)' }}>
+      <h1 className="text-black font-bold text-5xl">Complaints</h1>
       <div className="flex md:gap-7 flex-wrap justify-center items-center gap-7">
         {graph}
         <div className="bg-neutral-950 px-10 py-5 rounded-xl shadow-xl w-96 max-h-64 overflow-auto">

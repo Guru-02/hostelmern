@@ -3,9 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --clr-primary: #111827;
+  --clr-primary: #124e57;
   --primary: #1C1917;
   --secondary: #0A0A0A;
+}
+
+.bgMain{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxD0f0Whnol8Zkt_GU4ws9EgRqMc_3kt1q6w&s);
 }
 
 body {

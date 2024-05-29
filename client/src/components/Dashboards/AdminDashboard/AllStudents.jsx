@@ -140,14 +140,14 @@ function AllStudents() {
   }, [allStudents.length]);
 
   return (
-    <div className="w-full h-screen flex flex-col gap-5 items-center justify-center">
-      <h1 className="text-white font-bold text-5xl">All Students</h1>
+    <div className="w-full h-screen flex flex-col gap-5 items-center justify-center" style={{ backgroundImage: 'url(https://i0.wp.com/backgroundabstract.com/wp-content/uploads/edd/2022/06/soft_blue_mosaic_pattern_background-e1655909204819.jpg?resize=1000%2C750&ssl=1)' }}>
+      <h1 className="text-black font-bold text-5xl">All Students</h1>
       <div className="w-96 flex justify-center">
         <button
           onClick={getCSV}
           target="_blank"
           download={true}
-          className="px-20 py-3 bg-blue-700 hover:bg-blue-800 text-white font-bold rounded-xl shadow-xl"
+          className="px-20 py-3 bg-green-700 hover:bg-green-800 text-white font-bold rounded-xl shadow-xl"
         >
           Download List
         </button>

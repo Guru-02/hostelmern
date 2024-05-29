@@ -25,7 +25,7 @@ function Sidebar({ links }) {
     setIsOpen(!isOpen);
   };
 
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [ setWindowWidth] = useState(window.innerWidth);
   const setWindowDimensions = () => {
     setWindowWidth(window.innerWidth);
     if(window.innerWidth >= 768) {
@@ -70,13 +70,13 @@ function Sidebar({ links }) {
         </svg>
       </button>
       <div
-        className={`flex flex-col justify-between h-screen w-screen absolute md:static sm:w-64 bg-black text-white transition-transform duration-300 ease-in-out z-40 transform ${
-          isOpen ? "translate-x-0" : "absolute -translate-x-full"
+        className={`flex flex-col justify-between h-screen w-screen absolute md:static sm:w-64 bg-gray-700 text-white transition-transform duration-300 ease-in-out z-40 transform ${
+          isOpen ? "translate-x-0" : "absolute -translate-x-full" 
         }`}
       >
         <Link
           to={`/${links[0].for}-dashboard`}
-          className="py-4 px-4 md:py-5 lg:py-4 gap-2 bg-blue-700 flex items-center text-2xl"
+          className="py-4 px-4 md:py-5 lg:py-4 gap-2 bg-gray-800 flex items-center text-2xl"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -102,8 +102,8 @@ function Sidebar({ links }) {
               key={link.text}
               className={`py-2 px-4 flex items-center gap-2 ${
                 location.pathname === link.url
-                  ? "text-blue-500"
-                  : "hover:text-blue-500"
+                  ? "text-green-500"
+                  : "hover:text-green-500"
               }`}
             >
               {link.svg}
@@ -111,11 +111,11 @@ function Sidebar({ links }) {
             </Link>
           ))}
         </div>
-        <div className="p-4">
+        <div className="p-4" >
           <button
             onClick={logout}
             type="submit"
-            className="w-full flex gap-2 justify-center text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className="w-full flex gap-2 justify-center text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-yellow-800"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

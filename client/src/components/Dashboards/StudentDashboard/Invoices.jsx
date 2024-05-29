@@ -49,25 +49,25 @@ function Invoices() {
   }, [invoiceList.length, totalInvoices, pendingInvoices, paidInvoices]);
 
   return (
-    <div className="w-full h-screen flex flex-col gap-5 items-center justify-center max-h-screen overflow-y-auto">
-      <h1 className="text-white font-bold text-5xl">Invoices</h1>
-      <p className="text-white text-xl text-center px-5 sm:p-0">
-        All the invoices like Mess bills, Hostel fee will be shown here
-      </p>
+    <div className="w-full h-screen flex flex-col gap-5 items-center justify-center max-h-screen overflow-y-auto" style={{ backgroundImage: 'url(https://i0.wp.com/backgroundabstract.com/wp-content/uploads/edd/2022/06/soft_blue_mosaic_pattern_background-e1655909204819.jpg?resize=1000%2C750&ssl=1)' }}>
+      <h1 className="text-black font-bold text-5xl">Invoices</h1>
+      {/* <p className="text-black text-xl text-center px-5 sm:p-0">
+        All the hostel and mess invoices will be shown here
+      </p> */}
       <div className="flex gap-10 items-center my-5">
         <div className="flex flex-col items-center justify-center">
           <dt className="mb-2 ml-2 text-5xl font-extrabold text-blue-700">{totalInvoices}</dt>
-          <dd className="text-gray-400 text-center">Total Invoices</dd>
+          <dd className="text-black text-center">Total Invoices</dd>
         </div>
         <div className="flex flex-col items-center justify-center">
-          <dt className="mb-2 text-5xl font-extrabold text-blue-700">{paidInvoices}</dt>
-          <dd className="text-gray-400 ">
+          <dt className="mb-2 text-5xl font-extrabold text-green-700">{paidInvoices}</dt>
+          <dd className="text-black ">
             Paid Invoices
           </dd>
         </div>
         <div className="flex flex-col items-center justify-center">
-          <dt className="mb-2 text-5xl font-extrabold text-blue-700">{pendingInvoices}</dt>
-          <dd className="text-gray-400">
+          <dt className="mb-2 text-5xl font-extrabold text-red-700">{pendingInvoices}</dt>
+          <dd className="text-black">
             Pending Invoices
           </dd>
         </div>

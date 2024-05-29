@@ -141,9 +141,9 @@ function Mess() {
 
   return (
     
-    <div className="w-full h-screen gap-10 flex flex-col items-center justify-center max-h-screen overflow-y-auto pt-[500px] sm:pt-96 md:pt-96 lg:pt-40">
-      <h1 className="text-white font-bold text-5xl">Mess Off</h1>
-      <ul className="flex gap-5 text-white text-xl px-5 sm:p-0 text-center">
+    <div className="w-full h-screen gap-10 flex flex-col items-center justify-center max-h-screen overflow-y-auto pt-[500px] sm:pt-96 md:pt-96 lg:pt-20" style={{ backgroundImage: 'url(https://i0.wp.com/backgroundabstract.com/wp-content/uploads/edd/2022/06/soft_blue_mosaic_pattern_background-e1655909204819.jpg?resize=1000%2C750&ssl=1)' }}>
+      <h1 className="text-black font-bold text-5xl">Mess Off</h1>
+      <ul className="flex gap-5 text-black text-xl px-5 sm:p-0 text-center">
         <li>Total Mess: {daysofmonthtilltoday - Messoff} </li>
         <li>Mess Off: {loading ? loader : Messoff}</li>
         <li>Requests Sent: {loading ? loader : requests}</li>
@@ -175,7 +175,7 @@ function Mess() {
               },
             }}
           />
-          <ul className="text-white">
+          <ul className="text-black">
             <li className="flex gap-2">
               {" "}
               <span className="w-10 h-5 bg-orange-500 block"></span> Mess Off
@@ -234,7 +234,7 @@ function Mess() {
         </div>
         <button
           type="submit"
-          className="w-full text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-800 text-xl rounded-lg px-5 py-2.5 mt-5 text-center"
+          className="w-full text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-900 text-xl rounded-lg px-5 py-2.5 mt-5 text-center"
         >
           {loading ? (
             <div>{loader} Sending Request...</div>

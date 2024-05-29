@@ -111,8 +111,8 @@ function RegisterStudent() {
   const hostelNames = ["Arjun", "Vindhya Hostel", "Ganga Hostel", "Yamuna Hostel", "Narmada Hostel", "Godavari Hostel", "Kaveri Hostel", "Tapti Hostel"];
 
   return (
-    <div className="w-full max-h-screen pt-20 flex flex-col items-center justify-center">
-      <h1 className="text-white font-bold text-5xl mt-10 mb-5">
+    <div className="w-full max-h-screen pt-20 flex flex-col items-center justify-center" style={{ backgroundImage: 'url(https://i0.wp.com/backgroundabstract.com/wp-content/uploads/edd/2022/06/soft_blue_mosaic_pattern_background-e1655909204819.jpg?resize=1000%2C750&ssl=1)' }}>
+      <h1 className="text-black font-bold text-5xl mt-10 mb-5">
         Register Student
       </h1>
       <div className="md:w-[60vw] w-full p-10 bg-neutral-950 rounded-lg shadow-xl mb-10 overflow-auto">

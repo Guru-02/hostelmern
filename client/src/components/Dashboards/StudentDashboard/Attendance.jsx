@@ -44,9 +44,9 @@ function Attendance() {
     getAttendance();
   }, [ daysOff.length, thisWeek.length ]);
   return (
-    <div className="w-full h-screen flex flex-col gap-5 items-center justify-center max-h-screen overflow-y-auto pt-20 md:pt-0 ">
-      <h1 className="text-white font-bold text-5xl">Attendance</h1>
-      <ul className="flex gap-5 text-white text-xl px-5 sm:p-0 text-center">
+    <div className="w-full h-screen flex flex-col gap-5 items-center justify-center max-h-screen overflow-y-auto pt-20 md:pt-0 " style={{ backgroundImage: 'url(https://i0.wp.com/backgroundabstract.com/wp-content/uploads/edd/2022/06/soft_blue_mosaic_pattern_background-e1655909204819.jpg?resize=1000%2C750&ssl=1)' }}>
+      <h1 className="text-black font-bold text-5xl">Attendance</h1>
+      <ul className="flex gap-5 text-black text-xl px-5 sm:p-0 text-center">
         <li>Total Days: {totalDays}</li>
         <li>Present Days: {totalDays - daysOff}</li>
         <li>Absent days: {daysOff}</li>

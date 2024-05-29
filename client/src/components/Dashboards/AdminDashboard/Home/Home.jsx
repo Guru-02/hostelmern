@@ -174,7 +174,7 @@ function Home() {
       width="100%"
       height="85%"
       className={
-        "bg-neutral-950 px-7 py-5 rounded-xl shadow-xl w-full max-w-[350px] max-h-96"
+        "bg-blue-950 px-7 py-5 rounded-xl shadow-xl w-full max-w-[350px] max-h-96"
       }
     >
       <AreaChart
@@ -208,11 +208,11 @@ function Home() {
   );
 
   return (
-    <div className="w-full h-screen flex flex-col gap-3 items-center justify-center max-h-screen overflow-x-hidden overflow-y-auto pt-[400px] sm:pt-96 md:pt-96 lg:pt-80 xl:pt-20">
-      <h1 className="text-white font-bold text-5xl text-center">
-        Welcome <span className="text-blue-500">{admin.name || "admin"}!</span>
+    <div className="w-full h-screen flex flex-col gap-3 items-center justify-center max-h-screen overflow-x-hidden overflow-y-auto pt-[400px] sm:pt-96 md:pt-96 lg:pt-80 xl:pt-20" style={{ backgroundImage: 'url(https://i0.wp.com/backgroundabstract.com/wp-content/uploads/edd/2022/06/soft_blue_mosaic_pattern_background-e1655909204819.jpg?resize=1000%2C750&ssl=1)' }}>
+      <h1 className="text-black font-bold text-5xl text-center">
+        Welcome <span className="text-black">{admin.name || "admin"}!</span>
       </h1>
-      <div className="text-white flex items-center gap-20">
+      <div className="text-black font-semibold flex items-center gap-20">
 
         <div className="flex items-center gap-3">
 
@@ -232,7 +232,7 @@ function Home() {
         </div>
         <p>Current Selected: {selectedHostel.name}</p>
       </div>
-      <h1 className="text-white text-xl">Manager, {selectedHostel.name || "hostel"}</h1>
+      <h1 className="text-black text-xl font-bold">Manager, {selectedHostel.name || "hostel"}</h1>
       <div className="flex w-full gap-5 sm:px-20 pt-5 flex-wrap items-center justify-center">
         <ShortCard title="Total Students" number={totalStudents} />
         <ShortCard title="Total Complaints" number={totalComplaints} />

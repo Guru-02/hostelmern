@@ -19,20 +19,22 @@ function About() {
     name: "Roshan",
     designation: "Front End Developer",
     image:
-      "https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png",
+      "https://instagram.fblr4-2.fna.fbcdn.net/v/t51.2885-19/332190609_466640742255043_4615399076184429299_n.jpg?stp=dst-jpg_s320x320&_nc_ht=instagram.fblr4-2.fna.fbcdn.net&_nc_cat=107&_nc_ohc=i0s3QfV551kQ7kNvgFu6wOO&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AYDpBb7RmRgJw__wvb0_3Ir-Gk_KeUILYJxzxHznk3r0Ag&oe=6655742D&_nc_sid=8b3546",
+    profileLink:"https://www.linkedin.com/in/roshan-a-yemmi-40064326a/"
   };
   const akshya = {
-    name: "Akshtaraj",
+    name: "Akshathraj",
     designation: "Front End Developer",
     image:
       "https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png",
+    profileLink:"https://www.linkedin.com/in/akshathraj/"
   };
   const sahana = {
     name: "Sahana ",
     designation: "Database",
     image:
       "https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png",
-    
+    profileLink: "https://www.linkedin.com/in/sahana-aidnal-042138292/"
   };
 
   return (
